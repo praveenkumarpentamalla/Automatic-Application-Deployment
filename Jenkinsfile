@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/your-repo/terraform-ec2.git' // Replace with your repo URL containing main.tf & user_data
+                git branch: 'main', url: 'https://github.com/praveenkumarpentamalla/Automatic-Application-Deployment.git'
             }
         }
 
